@@ -1,3 +1,3 @@
 export default function Page() {
-    return <p>volunteer home</p>;
-  }
+  return <p>volunteer home</p>;
+}
