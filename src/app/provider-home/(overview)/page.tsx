@@ -1,3 +1,11 @@
+import styles from './page.module.css'
 export default function Page() {
-  return <p>provider home</p>;
+
+  return (
+    <div className={styles.main}>
+      
+      Provider Home Page
+            
+    </div>
+  );
 }
