@@ -3,8 +3,5 @@
     height: 500px;
     align-items: center;
     justify-content: center;
-    background-color: rgb(51, 128, 195);
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
+    background-color: white;
 }
