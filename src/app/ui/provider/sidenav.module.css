@@ -7,14 +7,13 @@
   border-bottom-width: 1px;
   border-color: lightgray;
   /* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05); */
-  height: 91px;
+  height: 71px;
   width: 100%;
+  z-index: 100;
 }
 
 .leftSection {
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 320px;
   border: none;
 }
@@ -32,7 +31,23 @@
 }
 
 .notificationIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
   margin-right: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.notificationIcon:hover {
+  background-color: var(--lightblue-shadow);
+}
+
+.notificationIcon:active {
+  opacity: 0.7;
 }
 
 .userIcon {
@@ -43,6 +58,45 @@
   height: 60px;
   border-width: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: gray;
   border-radius: 100px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.column {
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  width: 71px;
+  height: 100%;
+  background-color: white;
+  padding-top: 71px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  z-index: 1;
+}
+
+.sideButton {
+  margin-top: 45px;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sideButton:hover {
+  background-color: var(--lightblue-shadow);
+}
+
+.sideButton:active {
+  opacity: 0.7;
 }

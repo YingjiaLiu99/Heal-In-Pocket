@@ -1,7 +1,6 @@
 .main {
-  display: flex;
-  height: 500px;
-  align-items: center;
-  justify-content: center;
   background-color: white;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-bottom: 2000px;
 }
