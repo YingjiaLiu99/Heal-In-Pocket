@@ -1,7 +1,7 @@
 .main {
-    display: flex;
-    height: 500px;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
 }

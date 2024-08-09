@@ -1,11 +1,5 @@
-import styles from './page.module.css'
-export default function Page() {
+import styles from './page.module.css';
 
-  return (
-    <div className={styles.main}>
-      
-      Provider Home Page
-            
-    </div>
-  );
+export default function Page() {
+  return <div className={styles.main}>Provider Home Page</div>;
 }

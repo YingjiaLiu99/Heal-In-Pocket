@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Heal in Pocket',
-  description: 'A free telehealth mobile application that dedicates to make healthcare more accessible to underserved populations.',
+  description:
+    'A free telehealth mobile application that dedicates to make healthcare more accessible to underserved populations.',
 };
 
 export default function RootLayout({
