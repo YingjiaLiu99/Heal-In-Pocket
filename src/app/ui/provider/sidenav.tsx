@@ -26,19 +26,19 @@ export default function SideNavigator() {
       <div className={styles.column}>
         <div className={styles.sideButton}>
           <Image src="/home.svg" width={30} height={30} alt="home" />
-          <div className={styles.tooltip}>Home</div>
+          <div className={styles.iconName}>Home</div>
         </div>
         <div className={styles.sideButton}>
           <Image src="/record.svg" width={30} height={30} alt="record" />
-          <div className={styles.tooltip}>Record</div>
+          <div className={styles.iconName}>Record</div>
         </div>
         <div className={styles.sideButton}>
           <Image src="/chat.svg" width={30} height={30} alt="chat" />
-          <div className={styles.tooltip}>Chat</div>
+          <div className={styles.iconName}>Chat</div>
         </div>
         <div className={styles.sideButton}>
           <Image src="/setting.svg" width={30} height={30} alt="settings" />
-          <div className={styles.tooltip}>Settings</div>
+          <div className={styles.iconName}>Settings</div>
         </div>
       </div>
     </div>

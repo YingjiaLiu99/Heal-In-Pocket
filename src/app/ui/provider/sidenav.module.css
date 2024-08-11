@@ -16,6 +16,11 @@
   display: flex;
   width: 320px;
   border: none;
+  cursor: pointer;
+}
+
+.leftSection:active {
+  opacity: 0.8;
 }
 
 .middleSection {
@@ -114,6 +119,7 @@
 }
 
 .sideButton {
+  flex-direction: column;
   position: relative;
   margin-top: 45px;
   display: flex;
@@ -125,6 +131,7 @@
   border-radius: 100px;
   cursor: pointer;
   transition: background-color 0.3s;
+  padding-top: 23px;
 }
 
 .sideButton:hover {
@@ -135,22 +142,27 @@
   opacity: 0.7;
 }
 
-.sideButton .tooltip {
-  position: absolute;
-  display: flex;
-  background-color: gray;
-  color: white;
-  padding-left: 4px;
-  padding-right: 4px;
-  border-radius: 3px;
-  font-size: 12px;
-  bottom: -25px;
-  left: 20px;
-  opacity: 0;
-  transition: opacity 0.8s;
+.sideButton .iconName {
+  font-size: 13px;
+  color: black;
+  margin-top: 5px;
   pointer-events: none;
 }
 
-.sideButton:hover .tooltip {
-  opacity: 1;
+/* Below is for phone screen size layout */
+
+@media (max-width: 640px) {
+  .column {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    height: 71px;
+    width: 100%;
+    bottom: 71px;
+    background-color: white;
+    padding-top: 71px;
+    border-right: 1px;
+  }
 }
