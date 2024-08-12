@@ -1,7 +1,11 @@
+import Header from '@/app/ui/intro/header';
+
 export default function Intro() {
   return (
     <main>
-      <div>Home page</div>
+      <Header />
+
+      <p>Home page</p>
     </main>
   );
 }
