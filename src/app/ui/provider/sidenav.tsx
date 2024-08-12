@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './sidenav.module.css';
 
 export default function SideNavigator() {
@@ -6,7 +7,9 @@ export default function SideNavigator() {
     <div>
       <div className={styles.header}>
         <div className={styles.leftSection}>
-          <Image src="/HIP_logo_row.png" width={252} height={71} alt="logo" />
+          <Link href="/provider-home" style={{ display: 'flex' }}>
+            <Image src="/HIP_logo_row.png" width={249} height={70} alt="logo" priority />
+          </Link>
         </div>
 
         <div className={styles.middleSection}></div>

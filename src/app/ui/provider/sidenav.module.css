@@ -6,7 +6,6 @@
   border-bottom: solid;
   border-bottom-width: 1px;
   border-color: lightgray;
-  /* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05); */
   height: 71px;
   width: 100%;
   z-index: 100;
@@ -14,8 +13,6 @@
 
 .leftSection {
   display: flex;
-  width: 320px;
-  border: none;
   cursor: pointer;
 }
 

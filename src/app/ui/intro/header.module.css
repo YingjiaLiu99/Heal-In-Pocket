@@ -13,7 +13,6 @@
 
 .leftSection {
   display: flex;
-  border: none;
   cursor: pointer;
 }
 
@@ -66,7 +65,7 @@
   display: none;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 800px) {
   .menuButton {
     display: flex;
     align-items: center;
