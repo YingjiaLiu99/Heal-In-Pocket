@@ -8,7 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 
   --lightblue-shadow: rgba(92, 130, 255, 0.75);
-  --standardBlue: rgba(57, 91, 205, 1);
+  --standard-blue: rgba(57, 91, 205, 1);
 }
 
 @media (prefers-color-scheme: dark) {
