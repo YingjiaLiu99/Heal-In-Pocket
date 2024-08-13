@@ -1,0 +1,70 @@
+.textBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.textBox h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.textBox h2 {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+}
+.demo {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: lightgray;
+  margin-top: 10px;
+}
+
+.demoPicture {
+  display: flex;
+  background-color: lightyellow;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 10px;
+  width: 600px;
+  height: 100%;
+}
+
+.demoText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  padding: 10px;
+}
+
+.demoButton {
+  display: flex;
+  border-width: 1px;
+  border-color: var(--standard-blue);
+  border-radius: 15px;
+  padding: 5px;
+  color: var(--standard-blue);
+  background-color: white;
+  font-weight: 300px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+  user-select: none;
+}
+
+.demoButton:hover {
+  background-color: var(--standard-blue);
+  color: white;
+}
+
+.demoButton:active {
+  opacity: 0.7;
+}
