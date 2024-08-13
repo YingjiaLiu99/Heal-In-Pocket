@@ -1,6 +1,8 @@
+import styles from './page.module.css';
+
 export default function GetInvolved() {
   return (
-    <div>
+    <div className={styles.main}>
       <h1>Heal in Pocket is fiscally sponsored by</h1>
       <a>Open Collective Foundation</a>
       <p>Please visit this website to make contributions: </p>

@@ -1,6 +1,8 @@
+import styles from './page.module.css';
+
 export default function Projects() {
   return (
-    <div>
+    <div className={styles.main}>
       <h1>Demo</h1>
       <h2>Partnership with Street Corner Care</h2>
       <p>

@@ -1,6 +1,8 @@
+import styles from './page.module.css';
+
 export default function About() {
   return (
-    <div>
+    <div className={styles.main}>
       <h1>OUR STORY</h1>
       <h2>Empowering equity for all</h2>
       <p>
