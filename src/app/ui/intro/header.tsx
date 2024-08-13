@@ -39,10 +39,8 @@ export default function Header() {
       </div>
 
       <div className={styles.rightSection}>
-        <div className={styles.openButton}>Open Heal in Pocket</div>
-
-        <div className={styles.menuButton}>
-          <Image src="/menu.svg" width={30} height={30} alt="menu" />
+        <div className={styles.openButton}>
+          <Link href="/login">Open Heal in Pocket</Link>
         </div>
       </div>
     </div>
