@@ -6,11 +6,13 @@
 }
 
 .textBox h1 {
+  color: black;
   font-size: 35px;
   font-weight: 600;
 }
 
 .textBox h2 {
+  color: black;
   font-size: 15px;
   font-style: italic;
   font-weight: 400;

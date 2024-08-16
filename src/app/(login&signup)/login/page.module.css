@@ -10,6 +10,7 @@
 
 .main h1 {
   font-size: 22px;
+  color: black;
 }
 
 .main h2 {
@@ -35,6 +36,7 @@
 .label {
   font-size: 15px;
   margin-bottom: 0px;
+  color: black;
 }
 
 .input,
