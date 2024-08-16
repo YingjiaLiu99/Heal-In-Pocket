@@ -6,6 +6,7 @@
   flex-direction: column;
   border-radius: 15px;
   box-shadow: 5px 5px 3px hsla(220, 60%, 50%, 0.3);
+  padding-top: 5px;
 }
 
 .main h1 {
@@ -28,15 +29,34 @@
 .container {
   background-color: white;
   border-radius: 15px;
-  padding: 20px;
+  padding: 5px 20px 20px 20px;
   max-width: 500px;
   margin: 0 auto;
 }
 
 .label {
+  display: flex;
+  margin-top: 10px;
   font-size: 15px;
-  margin-bottom: 0px;
+  margin-bottom: 3px;
   color: black;
+}
+
+.forgotPassword {
+  display: flex;
+  color: var(--standard-blue);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: -3px;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.forgotPassword:active {
+  opacity: 0.7;
 }
 
 .input,
@@ -44,7 +64,7 @@
   width: 100%;
   padding: 12px 12px;
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -56,7 +76,8 @@
   background-color: white;
   color: var(--standard-blue);
   padding: 14px 20px;
-  margin: 8px 0;
+  margin-top: 15px;
+  margin-bottom: 3px;
   border-color: var(--standard-blue);
   border-radius: 15px;
   border-width: 1px;
@@ -71,4 +92,25 @@
 .submit:hover {
   background-color: var(--standard-blue);
   color: white;
+}
+
+.registerText {
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+}
+
+.register {
+  color: var(--standard-blue);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.register:hover {
+  text-decoration: underline;
+}
+
+.register:active {
+  opacity: 0.7;
 }

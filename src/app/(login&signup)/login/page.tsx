@@ -50,6 +50,10 @@ export default function Login() {
               className={styles.input}
             />
 
+            <a href="/forgot-password">
+              <div className={styles.forgotPassword}>Forgot your password?</div>
+            </a>
+
             <label htmlFor="userType" className={styles.label}>
               User
             </label>
@@ -81,7 +85,14 @@ export default function Login() {
               <option value="Street Corner Care">Street Corner Care, San Diego</option>
             </select>
 
-            <input type="submit" value="Submit" className={styles.submit} />
+            <input type="submit" value="Log In" className={styles.submit} />
+
+            <div className={styles.registerText}>
+              Need an account?{' '}
+              <a href="/signup" className={styles.register}>
+                Register
+              </a>
+            </div>
           </form>
         </div>
       </div>
