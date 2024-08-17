@@ -36,6 +36,10 @@ export default function SideNavigator() {
           <div className={styles.iconName}>Record</div>
         </div>
         <div className={styles.sideButton}>
+          <Image src="/search.svg" width={30} height={30} alt="search" />
+          <div className={styles.iconName}>Search</div>
+        </div>
+        <div className={styles.sideButton}>
           <Image src="/chat.svg" width={30} height={30} alt="chat" />
           <div className={styles.iconName}>Chat</div>
         </div>

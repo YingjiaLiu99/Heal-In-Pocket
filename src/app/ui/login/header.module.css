@@ -1,0 +1,21 @@
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 71px;
+  width: 100%;
+  z-index: 100;
+  border-style: solid;
+  border-bottom-width: 1px;
+  border-color: lightgray;
+}
+
+.leftSection {
+  display: flex;
+  cursor: pointer;
+}
+
+.leftSection:active {
+  opacity: 0.8;
+}

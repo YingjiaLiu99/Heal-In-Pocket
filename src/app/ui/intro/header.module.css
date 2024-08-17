@@ -28,6 +28,7 @@
 }
 
 .menu {
+  color: black;
   cursor: pointer;
 }
 
@@ -44,7 +45,8 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  min-width: 200px;
+  min-width: 180px;
+  margin-right: 10px;
 }
 
 .openButton {
