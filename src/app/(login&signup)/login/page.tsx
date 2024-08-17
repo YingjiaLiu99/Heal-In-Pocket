@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import styles from './page.module.css';
 
 export default function Login() {
@@ -50,9 +51,9 @@ export default function Login() {
               className={styles.input}
             />
 
-            <a href="/forgot-password">
+            <Link href="/forgot-password" prefetch={false}>
               <div className={styles.forgotPassword}>Forgot your password?</div>
-            </a>
+            </Link>
 
             <label htmlFor="userType" className={styles.label}>
               User
@@ -89,9 +90,9 @@ export default function Login() {
 
             <div className={styles.registerText}>
               Need an account?{' '}
-              <a href="/signup" className={styles.register}>
+              <Link href="/signup" className={styles.register} prefetch={false}>
                 Register
-              </a>
+              </Link>
             </div>
           </form>
         </div>

@@ -1,6 +1,5 @@
 .main {
   background-color: white;
   padding-top: 71px;
-  padding-left: 10px;
-  padding-right: 10px;
+  min-height: 100vh;
 }

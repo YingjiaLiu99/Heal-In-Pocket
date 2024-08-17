@@ -132,7 +132,7 @@
 }
 
 .sideButton:hover {
-  background-color: var(--lightblue);
+  background-color: var(--light-blue);
 }
 
 .sideButton:active {
