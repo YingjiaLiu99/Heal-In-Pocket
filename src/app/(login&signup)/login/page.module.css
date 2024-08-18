@@ -1,5 +1,11 @@
 .main {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  display: flex;
   border-style: solid;
   border-width: 1px;
   border-color: var(--standard-blue);

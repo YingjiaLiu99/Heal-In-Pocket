@@ -63,10 +63,6 @@
   opacity: 0.6;
 }
 
-.menuButton {
-  display: none;
-}
-
 @media (max-width: 800px) {
   .header {
     justify-content: space-between;
@@ -84,9 +80,5 @@
     z-index: 100;
     border-top-width: 1px;
     border-color: lightgrey;
-  }
-
-  .menu {
-    color: var(--standardBlue);
   }
 }
