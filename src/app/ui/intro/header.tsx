@@ -7,7 +7,7 @@ export default function Header() {
     <div className={styles.header}>
       <div className={styles.leftSection}>
         <Link href="/" style={{ display: 'flex' }} prefetch={false}>
-          <Image src="/HIP_logo_row.png" width={249} height={70} priority alt="logo" />
+          <Image src="/logos/HIP_logo_row.png" width={249} height={70} priority alt="logo" />
         </Link>
       </div>
 

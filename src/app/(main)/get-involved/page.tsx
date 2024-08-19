@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function GetInvolved() {
@@ -35,8 +36,9 @@ export default function GetInvolved() {
 
       <div className={styles.subTitle}>Contact Us</div>
 
-      <div className={styles.formContainer}>
-        <form>
+      <div className={styles.row1}>
+        <Image src="/intro/letsMakeChanges.webp" width={567} height={567} alt="pic1" />
+        <form className={styles.formContainer}>
           <label htmlFor="firstName" className={styles.label}>
             First Name
           </label>
@@ -64,8 +66,10 @@ export default function GetInvolved() {
           <label htmlFor="message" className={styles.label}>
             Message
           </label>
-          <textarea id="message" name="message" className={styles.input} />
-          <input type="submit" value="Send" className={styles.submit} />
+          <textarea id="message" name="message" className={styles.input} rows={5} />
+          <div className={styles.submitContainer}>
+            <input type="submit" value="Send" className={styles.submit} />
+          </div>
         </form>
       </div>
     </div>

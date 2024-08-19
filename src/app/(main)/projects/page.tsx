@@ -10,7 +10,7 @@ export default function Projects() {
       </div>
 
       <div className={styles.row1}>
-        <Image src="/atSCC3.png" width={600} height={417} alt="pic1" />
+        <Image src="/intro/atSCC3.png" width={600} height={417} alt="pic1" />
         <div className={styles.textBox}>
           <p>
             <span className={styles.highlight}>Our journey</span> towards transforming medical
@@ -46,9 +46,9 @@ export default function Projects() {
           preload="none"
           autoPlay
           loop
-          poster="/demo1-frameAt0m4s.jpg"
+          poster="/intro/demo1-frameAt0m4s.jpg"
         >
-          <source src="/demo1.mp4" type="video/mp4" />
+          <source src="/intro/demo1.mp4" type="video/mp4" />
         </video>
       </div>
     </main>

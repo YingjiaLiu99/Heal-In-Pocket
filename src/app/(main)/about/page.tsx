@@ -10,7 +10,7 @@ export default function About() {
       </div>
 
       <div className={styles.row1}>
-        <Image src="/atSCC.jpg" width={756} height={567} alt="pic1" />
+        <Image src="/intro/atSCC.jpg" width={756} height={567} alt="pic1" />
         <div className={styles.textBox}>
           <p>
             <span className={styles.highlight}>Heal in Pocket</span> was born out of a passion for
@@ -35,7 +35,7 @@ export default function About() {
             where healthcare equity is not just an aspiration, but a reality.
           </p>
         </div>
-        <Image src="/atSCC2.jpg" width={600} height={336} alt="pic2" />
+        <Image src="/intro/atSCC2.jpg" width={600} height={336} alt="pic2" />
       </div>
     </main>
   );
