@@ -25,7 +25,13 @@ export default function Intro() {
         <div className={styles.demoPicture}>picture here...</div>
         <div className={styles.demoText}>
           <p>Explore our feature seamlessly in a new tab - no downloads required!</p>
-          <Link href="/demo/patient" passHref legacyBehavior style={{ display: 'flex' }}>
+          <Link
+            href="/demo/patient"
+            passHref
+            legacyBehavior
+            style={{ display: 'flex' }}
+            prefetch={false}
+          >
             <a target="_blank">
               <div className={styles.demoButton}>Try it Now!</div>
             </a>

@@ -1,4 +1,5 @@
-import SideNavigator from '@/app/ui/provider/sidenav';
+import SideNavigator from './sidenav';
+import styles from './layout.module.css';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -7,7 +8,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <SideNavigator />
       </div>
 
-      <div>{children}</div>
+      <div className={styles.main}>{children}</div>
     </div>
   );
 }
