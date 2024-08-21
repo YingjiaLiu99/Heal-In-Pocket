@@ -13,6 +13,11 @@
 
 .leftSection {
   display: flex;
+  cursor: pointer;
+}
+
+.leftSection:active {
+  opacity: 0.7;
 }
 
 .middleSection {

@@ -1,5 +1,6 @@
-import { Announcement } from '@/app/types';
+import { Announcement, RequestObject } from '@/app/types';
 import AnnouncementBoard from '@/app/ui/provider/home/announcement';
+import Request from '@/app/ui/provider/home/request';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -42,6 +43,15 @@ export default function Home() {
     },
   ];
 
+  // Dummy Request
+  const req: RequestObject = {
+    patientName: 'Tom Reece',
+    correspondingRecord: 'randomId',
+    newPatient: true,
+    chiefComplaint: 'headache and wound infection',
+    createdAt: '04:25pm',
+  };
+
   return (
     <main className={styles.main}>
       <div className={styles.leftSection}>
@@ -55,7 +65,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.rightSection}>right</div>
+      <div className={styles.rightSection}>
+        <div style={{ marginTop: 10, marginBottom: 10, fontSize: 45, textAlign: 'center' }}>
+          Current Waitlist
+        </div>
+        <div className={styles.waitlist}>
+          <Request {...req} />
+        </div>
+      </div>
     </main>
   );
 }

@@ -7,7 +7,9 @@ export default function SideNavigator() {
     <div>
       <div className={styles.header}>
         <div className={styles.leftSection}>
-          <Image src="/logos/HIP_logo_row.png" width={249} height={70} alt="logo" priority />
+          <a href="/" style={{ display: 'flex' }}>
+            <Image src="/logos/HIP_logo_row.png" width={249} height={70} alt="logo" priority />
+          </a>
         </div>
 
         <div className={styles.middleSection}></div>

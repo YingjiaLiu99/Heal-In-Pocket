@@ -13,15 +13,6 @@
   margin-right: 20px;
 }
 
-.rightSection {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  border-width: 1px;
-  border-radius: 15px;
-  border-color: black;
-}
-
 .welcome {
   display: flex;
   flex-direction: column;
@@ -48,4 +39,27 @@
   border-style: solid;
   border-radius: 15px;
   background-color: var(--background-blue);
+}
+
+.rightSection {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--background-blue);
+  border-radius: 15px;
+}
+
+.waitlist {
+  display: flex;
+  width: 70%;
+  height: 90%;
+  border-width: 3px;
+  flex-direction: column;
+  border-radius: 15px;
+  border-color: gray;
+  padding: 10px;
+  background-color: white;
+  overflow: auto;
 }
