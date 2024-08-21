@@ -17,8 +17,8 @@ export default function Login() {
   };
 
   return (
-    <main>
-      <div className={styles.main}>
+    <main className={styles.main}>
+      <div className={styles.mainContainer}>
         <div className={styles.textContainer}>
           <h1>Welcome back!</h1>
           <h2>We are excited to see you again!</h2>

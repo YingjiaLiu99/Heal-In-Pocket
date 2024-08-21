@@ -74,6 +74,10 @@
   text-align: justify;
 }
 
+.highlight {
+  font-size: 28px;
+}
+
 @media (max-width: 1300px) {
   .main {
     padding-left: 30px;
