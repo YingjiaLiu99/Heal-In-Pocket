@@ -49,6 +49,7 @@
   flex-direction: column;
   background-color: var(--background-blue);
   border-radius: 15px;
+  padding-bottom: 25px;
 }
 
 .waitlist {

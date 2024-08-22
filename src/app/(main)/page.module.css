@@ -19,7 +19,7 @@
 }
 .demo {
   display: flex;
-  height: 500px;
+  height: 810px;
   width: 100%;
   border-width: 1px;
   border-radius: 10px;
@@ -32,9 +32,10 @@
   background-color: lightyellow;
   border-width: 1px;
   border-color: black;
-  border-radius: 10px;
-  width: 600px;
+  border-radius: 15px;
+  width: 1440px;
   height: 100%;
+  overflow: hidden;
 }
 
 .demoText {
