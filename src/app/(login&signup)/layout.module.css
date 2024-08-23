@@ -1,5 +1,5 @@
 .main {
-  background-color: white;
+  background-color: var(--background-blue);
   padding-left: 15px;
   padding-right: 15px;
   min-height: 100vh;

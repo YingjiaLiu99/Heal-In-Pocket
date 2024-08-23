@@ -54,7 +54,7 @@
   padding: 25px;
   box-shadow: 8px 8px 5px hsla(220, 60%, 50%, 0.3);
   background-color: var(--background-blue);
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .demoImage {
@@ -106,4 +106,10 @@
 
 .demoButton:active {
   opacity: 0.7;
+}
+
+@media (max-width: 1300px) {
+  .row1 {
+    flex-direction: column;
+  }
 }

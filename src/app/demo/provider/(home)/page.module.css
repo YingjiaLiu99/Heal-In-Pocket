@@ -64,3 +64,16 @@
   background-color: white;
   overflow: auto;
 }
+
+@media (max-width: 1300px) {
+  .main {
+    flex-direction: column;
+  }
+  .leftSection {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .waitlist {
+    width: 95%;
+  }
+}

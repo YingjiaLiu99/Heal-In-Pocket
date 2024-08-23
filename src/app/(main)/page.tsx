@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
@@ -18,7 +20,7 @@ export default function Intro() {
       <div className={styles.demo}>
         <div className={styles.row1}>
           <div className={styles.demoImage}>
-            <Image src="/intro/browser-demo1.png" width={1152} height={648} alt="pic1" />
+            <Image src="/intro/browser-demo.png" width={1152} height={648} alt="pic1" priority />
           </div>
           <div className={styles.demoText}>
             <p>
@@ -70,7 +72,12 @@ export default function Intro() {
                 the features yourself!
               </p>
               <Link href="/demo/provider" passHref legacyBehavior prefetch={false}>
-                <a target="_blank">
+                <a
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open('/demo/provider', '_blank', 'width=375,height=667');
+                  }}
+                >
                   <div className={styles.demoButton}>Try it Now!</div>
                 </a>
               </Link>

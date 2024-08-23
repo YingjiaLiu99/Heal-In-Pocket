@@ -17,11 +17,12 @@ export const announcements: Announcement[] = [
     author: 'Community Outreach Team',
   },
   {
-    header: 'Health Screening and Flu Vaccination Drive',
-    date: '11/25/2024',
+    header:
+      'Important Notice: Major Updates to Our EHR System Including Enhanced Security Protocols, New User Interface Features, Extended Data Integration Capabilities, and Improved Performance Metrics to Better Serve Our Medical Outreach Initiatives',
+    date: '11/22/2024',
     content:
-      'In an effort to keep our community healthy during the flu season, we are hosting a free health screening and flu vaccination drive on December 10th from 9:00 AM to 6:00 PM. All are welcome to attend. We will be offering basic health check-ups, flu shots, and wellness consultations. Volunteers with medical training are especially needed to help administer vaccines and perform screenings.',
-    author: 'Health Services Coordinator',
+      'We are excited to announce a significant update to our Electronic Health Record (EHR) system, which will include several new features and enhancements. These updates are designed to improve the security, usability, and performance of our system, ensuring that our medical outreach teams can operate more efficiently and effectively. Key updates include enhanced security protocols, a redesigned user interface, extended data integration capabilities, and improved performance metrics. We encourage all users to familiarize themselves with the new features and provide feedback to help us continue improving the system.',
+    author: 'Technical Development Team',
   },
   {
     header: 'Free Meals During the Holidays',
@@ -56,11 +57,12 @@ export const requests: RequestObject[] = [
     createdAt: '05:10pm',
   },
   {
-    patientName: 'John Smith',
-    correspondingRecord: 'randomId3',
-    newPatient: true,
-    chiefComplaint: 'high fever and cough',
-    createdAt: '06:00pm',
+    patientName: 'Jane Doe',
+    correspondingRecord: 'randomId7',
+    newPatient: false,
+    chiefComplaint:
+      'Patient is experiencing persistent, sharp chest pain that radiates to the left arm and neck, accompanied by shortness of breath, dizziness, and episodes of profuse sweating. The patient reports that the pain intensifies with physical activity and subsides slightly with rest. Additionally, there has been a noticeable increase in heart palpitations and fatigue over the past week. The patient is also experiencing occasional episodes of nausea and a general feeling of unease, raising concerns about potential cardiac issues.',
+    createdAt: '08:30am',
   },
   {
     patientName: 'Alice Johnson',

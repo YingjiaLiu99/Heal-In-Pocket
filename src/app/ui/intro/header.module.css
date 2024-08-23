@@ -59,6 +59,10 @@
   cursor: pointer;
 }
 
+.openButton:hover {
+  scale: 1.05;
+}
+
 .openButton:active {
   opacity: 0.6;
 }
