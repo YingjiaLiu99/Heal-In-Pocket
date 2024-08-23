@@ -112,4 +112,7 @@
   .row1 {
     flex-direction: column;
   }
+  .demoText {
+    padding: 30px 20px;
+  }
 }
