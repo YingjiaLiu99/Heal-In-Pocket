@@ -49,6 +49,7 @@
   flex-direction: column;
   background-color: var(--background-blue);
   border-radius: 15px;
+  padding-bottom: 25px;
 }
 
 .waitlist {
@@ -62,4 +63,17 @@
   padding: 10px;
   background-color: white;
   overflow: auto;
+}
+
+@media (max-width: 1300px) {
+  .main {
+    flex-direction: column;
+  }
+  .leftSection {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .waitlist {
+    width: 95%;
+  }
 }

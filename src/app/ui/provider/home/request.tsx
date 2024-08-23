@@ -1,6 +1,3 @@
-'use client';
-
-import { useState } from 'react';
 import { RequestObject } from '@/app/types';
 import styles from './request.module.css';
 
