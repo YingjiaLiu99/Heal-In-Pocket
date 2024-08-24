@@ -108,11 +108,17 @@
   opacity: 0.7;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .row1 {
     flex-direction: column;
   }
   .demoText {
     padding: 30px 20px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .demoText {
+    min-width: 400px;
   }
 }
