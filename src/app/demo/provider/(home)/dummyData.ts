@@ -1,4 +1,4 @@
-import { Announcement, RequestObject } from '@/app/types';
+import { Announcement, RequestObject, RecordObject } from '@/app/types';
 
 // Dummy array of announcements
 export const announcements: Announcement[] = [
@@ -58,7 +58,7 @@ export const requests: RequestObject[] = [
   },
   {
     patientName: 'Jane Doe',
-    correspondingRecord: 'randomId7',
+    correspondingRecord: 'randomId3',
     newPatient: false,
     chiefComplaint:
       'Patient is experiencing persistent, sharp chest pain that radiates to the left arm and neck, accompanied by shortness of breath, dizziness, and episodes of profuse sweating. The patient reports that the pain intensifies with physical activity and subsides slightly with rest. Additionally, there has been a noticeable increase in heart palpitations and fatigue over the past week. The patient is also experiencing occasional episodes of nausea and a general feeling of unease, raising concerns about potential cardiac issues.',
@@ -126,5 +126,105 @@ export const requests: RequestObject[] = [
     newPatient: false,
     chiefComplaint: 'allergic reaction',
     createdAt: '01:45am',
+  },
+];
+
+// Dummy array of records
+export const records: RecordObject[] = [
+  {
+    recordId: 'randomId1',
+    recordType: 'standard',
+    smokingStatus: 'non-smoker',
+    pregnancyStatus: 'not pregnant',
+    chronicCondition: 'hypertension',
+    currentMedications: 'Lisinopril',
+    allergies: 'None',
+    chiefComplaint: 'Headache and dizziness',
+
+    vitals: {
+      temperature: 98.6,
+      systolicBloodPressure: 130,
+      diastolicBloodPressure: 85,
+      pulse: 75,
+      oxygen: 98,
+      glucose: 90,
+    },
+
+    soap: {
+      subjective: 'Patient reports mild headache and occasional dizziness.',
+      objective: 'Vital signs are within normal limits, no acute distress.',
+      assessment: 'Hypertension, managed with current medication.',
+    },
+
+    providerName: 'Dr. John Doe',
+    scribeName: 'Jane Smith',
+    owner: '610c9ae1b6a832001c4b703d',
+
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    recordId: 'randomId2',
+    recordType: 'vital-check-only',
+    smokingStatus: 'former smoker',
+    pregnancyStatus: 'not pregnant',
+    chronicCondition: 'diabetes',
+    currentMedications: 'Metformin',
+    allergies: 'Penicillin',
+    chiefComplaint: 'Routine check-up',
+
+    vitals: {
+      temperature: 99.1,
+      systolicBloodPressure: 140,
+      diastolicBloodPressure: 90,
+      pulse: 82,
+      oxygen: 96,
+      glucose: 110,
+    },
+
+    soap: {
+      subjective: 'Patient feeling well, no complaints.',
+      objective: 'Blood pressure slightly elevated, glucose under control.',
+      assessment: 'Stable diabetes, recommend lifestyle modifications.',
+    },
+
+    providerName: 'Dr. Emily White',
+    scribeName: 'Mark Johnson',
+    owner: '610c9ae1b6a832001c4b703e',
+
+    createdAt: new Date(),
+    updatedAt: new Date(),
+  },
+  {
+    recordId: 'randomId3',
+    recordType: 'standard',
+    smokingStatus: 'never smoked',
+    pregnancyStatus: 'not pregnant',
+    chronicCondition: 'asthma',
+    currentMedications: 'Albuterol',
+    allergies: 'Peanuts',
+    chiefComplaint: 'Shortness of breath',
+
+    vitals: {
+      temperature: 97.9,
+      systolicBloodPressure: 120,
+      diastolicBloodPressure: 80,
+      pulse: 85,
+      oxygen: 94,
+      glucose: 100,
+    },
+
+    soap: {
+      subjective: 'Patient reports shortness of breath during physical activity.',
+      objective: 'Wheezing noted on auscultation, oxygen saturation slightly reduced.',
+      assessment: 'Asthma exacerbation, recommend inhaler use.',
+    },
+
+    providerName: 'Dr. Robert Brown',
+    scribeName: 'Alice Green',
+    owner: '610c9ae1b6a832001c4b703f',
+
+    createdAt: new Date(),
+    updatedAt: new Date(),
   },
 ];

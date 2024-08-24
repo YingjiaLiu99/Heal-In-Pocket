@@ -1,17 +1,7 @@
-'use client';
-
-import { useEffect } from 'react';
 import Image from 'next/image';
 import styles from './page.module.css';
 
 export default function Projects() {
-  useEffect(() => {
-    const videoElement = document.getElementById('demoVideo');
-    if (videoElement && window.innerWidth <= 640) {
-      videoElement.removeAttribute('autoplay');
-    }
-  }, []);
-
   return (
     <main className={styles.main}>
       <div className={styles.titleContainer}>
@@ -57,7 +47,6 @@ export default function Projects() {
           preload="none"
           loop
           poster="/intro/demo1-frameAt0m4s.jpg"
-          autoPlay
         >
           <source src="/intro/demo1.mp4" type="video/mp4" />
         </video>

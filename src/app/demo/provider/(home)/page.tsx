@@ -1,11 +1,27 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import { USERSTATUS } from '@/app/constants';
 import AnnouncementBoard from '@/app/ui/provider/home/announcement';
-import Request from '@/app/ui/provider/home/request';
 import StatusBar from '@/app/ui/provider/home/status';
-import { announcements, requests } from './dummyData';
+import { announcements, requests, records } from './dummyData';
+import RecordPopupWindow from './recordPopup';
+import Request from './request';
 import styles from './page.module.css';
 
 export default function Home() {
+  const [recordId, setRecordId] = useState('');
+  const [recordOpen, setRecordOpen] = useState(true);
+
+  const handleClickRequest = (id: string) => {
+    setRecordId(id);
+  };
+
+  useEffect(() => {
+    console.log('Record ID changed:', recordId);
+    console.log(records[0]);
+  }, [recordId]);
+
   return (
     <main className={styles.main}>
       <div className={styles.leftSection}>
@@ -30,10 +46,12 @@ export default function Home() {
         </div>
         <div className={styles.waitlist}>
           {requests.map((req, index) => (
-            <Request key={index} {...req} />
+            <Request key={index} {...req} handleClick={handleClickRequest} />
           ))}
         </div>
       </div>
+
+      {recordOpen && <RecordPopupWindow record={records[0]} />}
     </main>
   );
 }
