@@ -1,3 +1,20 @@
+export type Patient = {
+  pid: string;
+  name: string;
+  email: string;
+  phoneNumber: string;
+  DOB: string;
+  gender: string;
+  password: string;
+  insurance: string;
+  primaryCareProvider: string;
+  lastSeen: string;
+  profilePicture: String;
+  records: string[];
+  emailVerify: boolean;
+  phoneVerify: boolean;
+};
+
 export type Announcement = {
   header: string;
   date: string;
@@ -38,6 +55,6 @@ export type RecordObject = {
   providerName: string;
   scribeName: string;
   owner: string; // reference to 'Patient'
-  createdAt?: Date;
-  updatedAt?: Date;
+  createdAt: Date;
+  updatedAt: Date;
 };

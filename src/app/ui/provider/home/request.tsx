@@ -1,4 +1,4 @@
-import { RequestObject } from '@/app/types';
+import { RequestObject } from '@/app/demo/demo-types';
 import styles from './request.module.css';
 
 export default function Request(request: RequestObject) {
