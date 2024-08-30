@@ -38,21 +38,19 @@ body {
 /* Track */
 ::-webkit-scrollbar-track {
   /* box-shadow: inset 0 0 5px grey; */
-  border-radius: 20px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  border-radius: 20px;  
   background-color: lightgray;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--background-blue);
+  background: lightgray;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(186, 218, 230, 1);
+  background: gray;
 }
 
 @layer utilities {
