@@ -26,7 +26,7 @@
 
 .requestContainer h1 {
   color: black;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Limit to two lines (Webkit-specific) */
@@ -39,7 +39,7 @@
 
 .requestContainer h2 {
   color: black;
-  font-size: 20px;
+  font-size: 17px;
   margin-right: 20px;
 }
 

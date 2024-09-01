@@ -59,7 +59,7 @@ export default function Home() {
       </div>
 
       <div className={styles.rightSection}>
-        <div style={{ marginTop: 10, marginBottom: 10, fontSize: 30, textAlign: 'center' }}>
+        <div style={{ marginTop: 15, marginBottom: 10, fontSize: 30, textAlign: 'center' }}>
           Current Waitlist
         </div>
         <div className={styles.waitlist}>
