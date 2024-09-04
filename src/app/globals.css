@@ -44,7 +44,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: lightgray;
+  background: rgb(161, 161, 161);
   border-radius: 10px;
 }
 

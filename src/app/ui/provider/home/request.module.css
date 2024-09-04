@@ -26,7 +26,7 @@
 
 .requestContainer h1 {
   color: black;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Limit to two lines (Webkit-specific) */
@@ -44,6 +44,7 @@
 }
 
 .tag {
+  font-size: 15px;
   color: black;
   display: flex;
   background-color: var(--light-orange);
