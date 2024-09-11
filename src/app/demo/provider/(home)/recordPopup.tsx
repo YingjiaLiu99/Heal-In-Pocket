@@ -53,11 +53,12 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
               name="chiefComplaint"
               placeholder=""
               className={styles.inputBox}
-              rows={2}
+              rows={4}
+              defaultValue={record.chiefComplaint}
             />
           </div>
 
-          <div className={styles.inputBoxContainer}>
+          <div className={styles.inputBoxContainer} style={{ backgroundColor: 'lightyellow' }}>
             <label htmlFor="subjective" className={styles.label}>
               Subjective
             </label>
@@ -66,22 +67,25 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
               name="subjective"
               placeholder=""
               className={styles.inputBox}
+              style={{ backgroundColor: 'lightyellow' }}
               rows={4}
             />
           </div>
-          <div className={styles.inputBoxContainer} style={{ backgroundColor: 'lightyellow' }}>
-            <label htmlFor="medicalHistory" className={styles.label}>
-              Medical History
+
+          <div className={styles.inputBoxContainer}>
+            <label htmlFor="chronicCondition" className={styles.label}>
+              Chronic Condition
             </label>
             <textarea
-              id="medicalHistory"
-              name="medicalHistory"
+              id="chronicCondition"
+              name="chronicCondition"
               placeholder=""
               className={styles.inputBox}
               rows={2}
-              style={{ backgroundColor: 'lightyellow' }}
+              defaultValue={record.chronicCondition}
             />
           </div>
+
           <div className={styles.inputBoxContainer}>
             <label htmlFor="med/allergy" className={styles.label}>
               Current Medication/Allergies
@@ -92,6 +96,105 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
               placeholder=""
               className={styles.inputBox}
               rows={2}
+              defaultValue={`${record.currentMedications} [Allergies: ${record.allergies}]`}
+            />
+          </div>
+
+          {/* vital grid */}
+          <div style={{ width: '100%' }}>
+            <div className={styles.vitalGrid}>
+              <div className={styles.vitalBoxContainer}>
+                <label htmlFor="temperature" className={styles.label}>
+                  Temp
+                </label>
+                <textarea
+                  id="temperature"
+                  name="temperature"
+                  placeholder=""
+                  className={styles.vitalInputBox}
+                  rows={1}
+                  defaultValue={record.vitals.temperature}
+                />
+              </div>
+              <div className={styles.vitalBoxContainer}>
+                <label htmlFor="pulse" className={styles.label}>
+                  Pulse
+                </label>
+                <textarea
+                  id="pulse"
+                  name="pulse"
+                  placeholder=""
+                  className={styles.vitalInputBox}
+                  rows={1}
+                  defaultValue={record.vitals.pulse}
+                />
+              </div>
+              <div className={styles.vitalBoxContainer}>
+                <label htmlFor="oxygen" className={styles.label}>
+                  Oxygen
+                </label>
+                <textarea
+                  id="oxygen"
+                  name="oxygen"
+                  placeholder=""
+                  className={styles.vitalInputBox}
+                  rows={1}
+                  defaultValue={record.vitals.oxygen}
+                />
+              </div>
+              <div className={styles.vitalBoxContainer}>
+                <label htmlFor="glucose" className={styles.label}>
+                  BG
+                </label>
+                <textarea
+                  id="glucose"
+                  name="glucose"
+                  placeholder=""
+                  className={styles.vitalInputBox}
+                  rows={1}
+                  defaultValue={record.vitals.glucose}
+                />
+              </div>
+              <div className={styles.vitalBoxContainer}>
+                <label htmlFor="systolicBloodPressure" className={styles.label}>
+                  Sys BP
+                </label>
+                <textarea
+                  id="systolicBloodPressure"
+                  name="systolicBloodPressure"
+                  placeholder=""
+                  className={styles.vitalInputBox}
+                  rows={1}
+                  defaultValue={record.vitals.systolicBloodPressure}
+                />
+              </div>
+              <div className={styles.vitalBoxContainer}>
+                <label htmlFor="diastolicBloodPressure" className={styles.label}>
+                  Dia BP
+                </label>
+                <textarea
+                  id="diastolicBloodPressure"
+                  name="diastolicBloodPressure"
+                  placeholder=""
+                  className={styles.vitalInputBox}
+                  rows={1}
+                  defaultValue={record.vitals.diastolicBloodPressure}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.inputBoxContainer} style={{ backgroundColor: 'lightyellow' }}>
+            <label htmlFor="objective" className={styles.label}>
+              Objective
+            </label>
+            <textarea
+              id="objective"
+              name="objective"
+              placeholder=""
+              className={styles.inputBox}
+              style={{ backgroundColor: 'lightyellow' }}
+              rows={4}
             />
           </div>
         </div>

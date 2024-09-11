@@ -24,6 +24,7 @@
   height: 90%;
   align-items: center;
   padding: 100px 10px 15px 10px;
+  overflow-y: auto;
 }
 
 .closeButton {
@@ -107,4 +108,36 @@
 
 .label {
   color: gray;
+}
+
+/* vital grid style */
+.vitalGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+
+.vitalBoxContainer {
+  display: flex;
+  flex-direction: column;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: black;
+  width: 100%;
+  padding: 5px 10px 5px 10px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.vitalInputBox {
+  color: black;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  min-height: 1lh;
+  max-height: 5lh;
+  background-color: white;
+  resize: none;
 }
