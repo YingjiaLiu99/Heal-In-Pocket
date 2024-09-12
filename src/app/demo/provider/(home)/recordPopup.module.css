@@ -14,7 +14,7 @@
 }
 
 .mainContainer {
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -23,7 +23,7 @@
   width: 80%;
   height: 90%;
   align-items: center;
-  padding: 100px 10px 15px 10px;
+  padding: 0px 10px 15px 10px;
   overflow-y: auto;
 }
 
@@ -41,15 +41,14 @@
 
 .header {
   display: flex;
-  position: absolute;
-  left: 10px;
-  right: 10px;
+  position: sticky;  
   top: 10px;
   flex-direction: column;
   background-color: var(--background-blue);
   border-radius: 15px;
   padding: 10px;
   height: 92px;
+  width: 100%;
 }
 
 .header h1 {
@@ -75,6 +74,7 @@
   height: 100%;
   border-radius: 15px;
   align-items: center;
+  margin-top: 10px;
 }
 
 .contentContainer h1 {

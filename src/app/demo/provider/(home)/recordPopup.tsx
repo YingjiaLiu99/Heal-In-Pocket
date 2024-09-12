@@ -25,7 +25,6 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
         <div className={styles.closeButton}>
           <Image src="/icons/close.svg" width={30} height={30} alt="close" onClick={handleClose} />
         </div>
-
         <div className={styles.header}>
           <h1>{patient.name}</h1>
           <h2>
@@ -197,6 +196,49 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
               rows={4}
             />
           </div>
+
+          <div className={styles.inputBoxContainer} style={{ backgroundColor: 'lightyellow' }}>
+            <label htmlFor="assessment" className={styles.label}>
+              Assessment / Future Plan
+            </label>
+            <textarea
+              id="assessment"
+              name="assessment"
+              placeholder=""
+              className={styles.inputBox}
+              style={{ backgroundColor: 'lightyellow' }}
+              rows={4}
+            />
+          </div>
+
+          <div className={styles.inputBoxContainer}>
+            <label htmlFor="providerName" className={styles.label}>
+              Provider Name (Optional)
+            </label>
+            <textarea
+              id="providerName"
+              name="providerName"
+              placeholder=""
+              className={styles.inputBox}
+              rows={1}
+              defaultValue={record.providerName}
+            />
+          </div>
+
+          <div className={styles.inputBoxContainer}>
+            <label htmlFor="scribeName" className={styles.label}>
+              Scribe Name (Optional)
+            </label>
+            <textarea
+              id="scribeName"
+              name="scribeName"
+              placeholder=""
+              className={styles.inputBox}
+              rows={1}
+              defaultValue={record.scribeName}
+            />
+          </div>
+
         </div>
       </div>
     </div>
