@@ -26,6 +26,12 @@
   overflow-y: auto;
 }
 
+@media (max-width: 640px) {
+  .mainContainer {
+    width: 95%;
+  }
+}
+
 .closeButton {
   position: absolute;
   top: 3px;

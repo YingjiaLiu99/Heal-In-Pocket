@@ -2,17 +2,27 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import NotificationPopupScreen from './notificationPopup';
 import UserPopupProfile from './userPopup';
 import styles from './sidenav.module.css';
 
 export default function SideNavigator() {
   const [userProfileOpen, setUserProfileOpen] = useState(false);
+  const [notificationOpen, setNotificationOpen] = useState(false);
+
+  const handleClickNotification = () => {
+    setNotificationOpen(true);
+  };
+
+  const handleCloseNotification = () => {
+    setNotificationOpen(false);
+  };
 
   const handleClickUser = () => {
     setUserProfileOpen(true);
   };
 
-  const handleClosePopup = () => {
+  const handleCloseUserProfile = () => {
     setUserProfileOpen(false);
   };
 
@@ -28,7 +38,7 @@ export default function SideNavigator() {
         <div className={styles.middleSection}></div>
 
         <div className={styles.rightSection}>
-          <div className={styles.notificationIcon}>
+          <div className={styles.notificationIcon} onClick={handleClickNotification}>
             <Image src="/icons/notifications.svg" width={30} height={30} alt="notifications" />
             <div className={styles.number}>3</div>
             <div className={styles.tooltip}>Notification</div>
@@ -62,7 +72,9 @@ export default function SideNavigator() {
         </div>
       </div>
 
-      {userProfileOpen && <UserPopupProfile closePopup={handleClosePopup} />}
+      {userProfileOpen && <UserPopupProfile closePopup={handleCloseUserProfile} />}
+
+      {notificationOpen && <NotificationPopupScreen closePopup={handleCloseNotification} />}
     </div>
   );
 }
