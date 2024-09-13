@@ -1,8 +1,21 @@
+'use client';
+
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import UserPopupProfile from './userPopup';
 import styles from './sidenav.module.css';
 
 export default function SideNavigator() {
+  const [userProfileOpen, setUserProfileOpen] = useState(false);
+
+  const handleClickUser = () => {
+    setUserProfileOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setUserProfileOpen(false);
+  };
+
   return (
     <div>
       <div className={styles.header}>
@@ -20,7 +33,7 @@ export default function SideNavigator() {
             <div className={styles.number}>3</div>
             <div className={styles.tooltip}>Notification</div>
           </div>
-          <div className={styles.userIcon}>
+          <div className={styles.userIcon} onClick={handleClickUser}>
             <Image src="/icons/doctor_m.png" width={60} height={60} alt="user" />
           </div>
         </div>
@@ -48,6 +61,8 @@ export default function SideNavigator() {
           <div className={styles.iconName}>Settings</div>
         </div>
       </div>
+
+      {userProfileOpen && <UserPopupProfile closePopup={handleClosePopup} />}
     </div>
   );
 }

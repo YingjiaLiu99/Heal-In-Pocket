@@ -6,9 +6,7 @@
 
 .mainContainer {
   display: flex;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--standard-blue);
+  border: 1px solid var(--standard-blue);
   background-color: white;
   flex-direction: column;
   border-radius: 15px;

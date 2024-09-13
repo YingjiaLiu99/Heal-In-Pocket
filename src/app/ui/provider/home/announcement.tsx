@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Announcement } from '@/app/types';
+import { Announcement } from '@/app/demo/demo-types';
 import Image from 'next/image';
 import styles from './announcement.module.css';
 
