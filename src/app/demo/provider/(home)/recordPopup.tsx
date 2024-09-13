@@ -22,9 +22,6 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
   return (
     <div className={styles.backdrop}>
       <div className={styles.mainContainer}>
-        <div className={styles.closeButton}>
-          <Image src="/icons/close.svg" width={30} height={30} alt="close" onClick={handleClose} />
-        </div>
         <div className={styles.header}>
           <h1>{patient.name}</h1>
           <h2>
@@ -38,6 +35,16 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
               {formatDate(record.updatedAt)}
               {']'}
             </h2>
+          </div>
+
+          <div className={styles.closeButton}>
+            <Image
+              src="/icons/close.svg"
+              width={30}
+              height={30}
+              alt="close"
+              onClick={handleClose}
+            />
           </div>
         </div>
 
@@ -114,6 +121,7 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
                   rows={1}
                   defaultValue={record.vitals.temperature}
                 />
+                <div className={styles.unit}>F</div>
               </div>
               <div className={styles.vitalBoxContainer}>
                 <label htmlFor="pulse" className={styles.label}>
@@ -127,6 +135,7 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
                   rows={1}
                   defaultValue={record.vitals.pulse}
                 />
+                <div className={styles.unit}>bpm</div>
               </div>
               <div className={styles.vitalBoxContainer}>
                 <label htmlFor="oxygen" className={styles.label}>
@@ -140,6 +149,7 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
                   rows={1}
                   defaultValue={record.vitals.oxygen}
                 />
+                <div className={styles.unit}>%</div>
               </div>
               <div className={styles.vitalBoxContainer}>
                 <label htmlFor="glucose" className={styles.label}>
@@ -153,6 +163,7 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
                   rows={1}
                   defaultValue={record.vitals.glucose}
                 />
+                <div className={styles.unit}>mg/dl</div>
               </div>
               <div className={styles.vitalBoxContainer}>
                 <label htmlFor="systolicBloodPressure" className={styles.label}>
@@ -166,6 +177,7 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
                   rows={1}
                   defaultValue={record.vitals.systolicBloodPressure}
                 />
+                <div className={styles.unit}>mmHg</div>
               </div>
               <div className={styles.vitalBoxContainer}>
                 <label htmlFor="diastolicBloodPressure" className={styles.label}>
@@ -179,6 +191,7 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
                   rows={1}
                   defaultValue={record.vitals.diastolicBloodPressure}
                 />
+                <div className={styles.unit}>mmHg</div>
               </div>
             </div>
           </div>
@@ -239,6 +252,10 @@ export default function RecordPopupWindow({ patient, record, handleClose }: reco
             />
           </div>
 
+          <div className={styles.buttonContainer}>
+            <div className={styles.reminder}>Please confirm again.</div>
+            <div className={styles.button}>Submit</div>
+          </div>
         </div>
       </div>
     </div>

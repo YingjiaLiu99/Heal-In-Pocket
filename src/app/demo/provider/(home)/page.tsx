@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { USERSTATUS } from '@/app/constants';
 import { RecordObject, Patient } from '@/app/demo/demo-types';
 import AnnouncementBoard from '@/app/ui/provider/home/announcement';
@@ -27,17 +27,6 @@ export default function Home() {
   const handleCloseRecord = () => {
     setRecordOpen(false);
   };
-
-  useEffect(() => {
-    if (recordOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [recordOpen]);
 
   return (
     <main className={styles.main}>
