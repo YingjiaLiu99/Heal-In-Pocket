@@ -40,6 +40,11 @@
   margin-top: 10px;
   cursor: pointer;
   width: 100%;
+  user-select: none;
+}
+
+.message:hover {
+  background-color: lightgray;
 }
 
 .message:active {

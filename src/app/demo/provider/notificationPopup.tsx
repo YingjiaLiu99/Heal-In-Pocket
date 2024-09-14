@@ -17,7 +17,7 @@ export default function NotificationPopupScreen({ closePopup }: NotificationPopu
   return (
     <div className={styles.backdrop} ref={modalRef} onClick={handleOutsideClick}>
       <div className={styles.mainContainer}>
-        <h1>Notification Inbox</h1>
+        <h1 style={{ userSelect: 'none' }}>Notification Inbox</h1>
 
         <div className={styles.message}>
           {`Patient John Doe's lab results are available for review. Please verify and add notes to the patient record.`}

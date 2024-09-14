@@ -25,6 +25,10 @@
   z-index: 200;
 }
 
+.title {
+  font-weight: 700;
+}
+
 .button1,
 .button2 {
   display: flex;
