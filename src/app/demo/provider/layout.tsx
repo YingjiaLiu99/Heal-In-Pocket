@@ -9,6 +9,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </div>
 
       <div className={styles.main}>{children}</div>
+
+      <footer className={styles.footer}>
+        This is a demo and may not reflect the actual product.
+      </footer>
     </div>
   );
 }

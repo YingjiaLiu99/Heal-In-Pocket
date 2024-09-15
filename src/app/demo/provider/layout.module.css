@@ -7,9 +7,23 @@
   min-height: 100vh;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  font-size: 15px;
+  user-select: none;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
 @media (max-width: 640px) {
   .main {
     padding-left: 0px;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
+  }
+  .footer {
+    margin-bottom: 90px;
   }
 }
