@@ -5,7 +5,7 @@ import { USERSTATUS } from '@/app/constants';
 import { RecordObject, Patient } from '@/app/demo/demo-types';
 import AnnouncementBoard from '@/app/ui/provider/home/announcement';
 import StatusBar from '@/app/ui/provider/home/status';
-import { announcements, requests, records, patients } from './dummyData';
+import { announcements, requests, records, patients } from '../../dummyData';
 import RecordPopupWindow from './recordPopup';
 import Request from './request';
 import styles from './page.module.css';
