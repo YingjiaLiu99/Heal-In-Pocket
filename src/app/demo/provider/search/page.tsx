@@ -51,7 +51,9 @@ export default function SearchPage() {
 
   return (
     <div className={styles.main}>
-      <SearchBar onSearch={handleSearch} />
+      <div className={styles.searchBarContainer}>
+        <SearchBar onSearch={handleSearch} />
+      </div>
 
       <div>
         <h3>Patient Results</h3>
