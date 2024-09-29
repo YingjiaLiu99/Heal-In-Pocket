@@ -5,12 +5,12 @@ import Image from 'next/image';
 import styles from './searchbar.module.css';
 
 interface SearchBarProps {
+  query: string;
+  setQuery: (query: string) => void;
   onSearch: (query: string) => void;
 }
 
-export default function SearchBar({ onSearch }: SearchBarProps) {
-  const [query, setQuery] = useState<string>('');
-
+export default function SearchBar({ query, setQuery, onSearch }: SearchBarProps) {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const searchQuery = e.target.value;
     setQuery(searchQuery);
