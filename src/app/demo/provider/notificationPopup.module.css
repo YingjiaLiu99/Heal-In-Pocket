@@ -17,28 +17,49 @@
   border-radius: 15px;
   box-shadow: 5px 5px 3px hsla(220, 60%, 50%, 0.3);
   background-color: white;
-  align-items: start;
-  padding: 15px 20px 15px 20px;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
   overflow-y: auto;
-  right: 10px;
+  right: 70px;
   top: 80px;
   z-index: 200;
 }
 
-.title {
-  font-weight: 700;
+.mainContainer h1 {
+  font-size: 20px;
 }
 
-.button1,
-.button2 {
+.message {
+  display: flex;
+  align-items: start;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: gray;
+  background-color: white;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  user-select: none;
+}
+
+.message:hover {
+  background-color: lightgray;
+}
+
+.message:active {
+  opacity: 0.7;
+}
+
+.button {
   display: flex;
   width: 100%;
   background-color: white;
-  color: var(--standard-blue);
+  color: salmon;
   padding: 5px 5px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  border-color: var(--standard-blue);
+  margin-top: 25px;
+  margin-bottom: 5px;
+  border-color: salmon;
   border-radius: 10px;
   border-width: 1px;
   font-weight: 300px;
@@ -51,22 +72,11 @@
   font-size: 15px;
 }
 
-.button1:hover {
-  background-color: var(--standard-blue);
-  color: white;
-}
-
-.button1:active,
-.button2:active {
+.button:active {
   opacity: 0.7;
 }
 
-.button2 {
-  color: salmon;
-  border-color: salmon;
-}
-
-.button2:hover {
+.button:hover {
   background-color: salmon;
   color: white;
 }

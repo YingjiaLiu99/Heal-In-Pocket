@@ -1,11 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { USERSTATUS } from '@/app/constants';
 import { RecordObject, Patient } from '@/app/demo/demo-types';
 import AnnouncementBoard from '@/app/ui/provider/home/announcement';
 import StatusBar from '@/app/ui/provider/home/status';
-import { announcements, requests, records, patients } from './dummyData';
+import { announcements, requests, records, patients } from '../../dummyData';
 import RecordPopupWindow from './recordPopup';
 import Request from './request';
 import styles from './page.module.css';
@@ -27,6 +27,18 @@ export default function Home() {
   const handleCloseRecord = () => {
     setRecordOpen(false);
   };
+
+  useEffect(() => {
+    if (recordOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      // Clean up the overflow style when the component unmounts
+      document.body.style.overflow = '';
+    };
+  }, [recordOpen]);
 
   return (
     <main className={styles.main}>
