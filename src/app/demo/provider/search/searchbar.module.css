@@ -35,3 +35,9 @@
   outline: none;
   /* border-color: var(--light-blue); */
 }
+
+@media (max-width: 640px) {
+  .boxContainer {
+    width: 90%;
+  }
+}

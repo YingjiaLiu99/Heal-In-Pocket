@@ -51,7 +51,7 @@ export default function Intro() {
 
         <div className={styles.row1}>
           <div className={styles.demoImage}>
-            <Image src="/intro/phones-demo.png" width={1115} height={836} alt="pic2" />
+            <Image src="/intro/iphone.png" width={1115} height={836} alt="pic2" />
           </div>
           <div className={styles.demoText}>
             <p>
